@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos | Maycolt Erick Laime Ugarte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand brand" href="index.html">Maycolt Laime</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" data-nav href="index.html">Datos</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav href="perfil.html">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav href="experiencia.html">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav href="formacion.html">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav href="referencias.html">Referencias</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="section-block">
+      <h2 class="section-title">Proyectos personales y profesionales</h2>
+      <p class="section-lead">Selección de trabajos freelance y hackathones destacados.</p>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="badge text-bg-success mb-2">Freelance</span>
+          <h3 class="h5">Sistema de ventas</h3>
+          <p>Sistema de ventas para un restaurante de comida rápida: pedidos, control básico y flujo operativo.</p>
+        </article>
+
+        <article class="project-card">
+          <span class="badge badge-win mb-2">Ganadores · YAIS IA for Good</span>
+          <h3 class="h5">EcoVision AI</h3>
+          <p>Clasificador de residuos con estrategia de gamificación para fomentar hábitos sostenibles.</p>
+        </article>
+
+        <article class="project-card">
+          <span class="badge text-bg-secondary mb-2">Participantes · Innovahack</span>
+          <h3 class="h5">Finora Agentic</h3>
+          <p>Tracking, automatización y validación de la recolección de residuos para Fundares (Santa Cruz).</p>
+        </article>
+
+        <article class="project-card">
+          <span class="badge badge-win mb-2">Ganadores · AI Safety Hackathon</span>
+          <h3 class="h5">Shieldmail</h3>
+          <p>Agente IA con heurística y filtros para detectar phishing, scam y correos maliciosos.</p>
+        </article>
+
+        <article class="project-card">
+          <span class="badge text-bg-primary mb-2">Participante · NASA Space Apps</span>
+          <h3 class="h5">NASA Space Apps Challenge</h3>
+          <p>Participación en el desafío global de la NASA, aplicando creatividad y tecnología a problemas del espacio y la Tierra.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="dom-lab section-block">
+      <h3>Laboratorio DOM · Crear, insertar y eliminar</h3>
+      <p class="section-lead mb-2">Agrega logros a la lista; cada ítem se puede eliminar individualmente.</p>
+
+      <div class="row g-2 align-items-end mb-3">
+        <div class="col-md-8">
+          <label for="nuevo-item" class="form-label">Nuevo logro / nota</label>
+          <input id="nuevo-item" class="form-control" type="text" placeholder="Ej: Mentoría en club de IA">
+        </div>
+        <div class="col-md-4 demo-toolbar">
+          <button id="btn-agregar-item" class="btn btn-forest" type="button">Crear e insertar</button>
+          <button id="btn-limpiar-lista" class="btn btn-outline-danger" type="button">Vaciar lista</button>
+        </div>
+      </div>
+
+      <ul id="lista-dinamica" class="dynamic-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Maycolt Erick Laime Ugarte · Universidad del Valle · Programación Web 1</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
